@@ -5,7 +5,6 @@ const routes = require('./routes/routes');
 const styleSheets = require('./routes/styleSheets');
 const scripts = require('./routes/scripts');
 
-process.env.PORT = 4000;
 process.env.TITLE = 'Hello';
 process.env.APP_ROOT = __dirname;
 
@@ -15,5 +14,5 @@ app.use('/', routes);
 app.use('/styleSheets', styleSheets);
 app.use('/scripts', scripts);
 
-app.listen(process.env.PORT);
-console.log('Listening on port ' + process.env.PORT + '...');
+app.listen(4000);
+console.log('Listening on port ' + 4000 + '...');
